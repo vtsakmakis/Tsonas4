@@ -1,0 +1,542 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tsonas</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;600;700&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <link rel="stylesheet" href="./styles.css">
+    
+</head>
+<body>
+    <div class="background-icons">
+        <img src="./images/crepe1.svg" class="floating-icon" style="left: 5%; width: 40px;" alt="floating crepe">
+        <img src="./images/crepe2.svg" class="floating-icon" style="left: 25%; width: 35px;" alt="floating crepe">
+        <img src="./images/crepe3.svg" class="floating-icon" style="left: 45%; width: 45px;" alt="floating crepe">
+        <img src="./images/crepe1.svg" class="floating-icon" style="left: 65%; width: 38px;" alt="floating crepe">
+        <img src="./images/crepe2.svg" class="floating-icon" style="left: 85%; width: 42px;" alt="floating crepe">
+    </div>
+    <!-- Header -->
+    <header class="header">
+        <div class="header-content">
+            <div class="header-left">
+                <h1>Crepes <br> in da hood</h1>
+                <div class="header-details">
+                    <span><i class="fas fa-map-marker-alt"></i> Παύλου Μελά 106 Φλώρινα </span>
+                    <span><i class="fas fa-clock"></i> Καθημερινά 14:00-01:30</span>
+                </div>
+            </div>
+            <div class="header-right">
+                <div class="header-image">
+                    <img src="./images/cropped_image.png" alt="Crepe illustration">
+                </div>
+              
+            </div>
+        </div>
+    </header>
+
+
+    <!-- Menu Navigation -->
+    <nav class="menu-nav" id="menu" aria-label="Menu Categories">
+        <div class="scroll-container" role="tablist">
+            <button class="menu-link" data-target="salted" role="tab" aria-selected="true" aria-controls="salted">Αλμυρές κρέπες</button>
+            <button class="menu-link" data-target="sweet" role="tab" aria-selected="false" aria-controls="sweet">Γλυκές κρέπες</button>
+            <button class="menu-link" data-target="build" role="tab" aria-selected="false" aria-controls="build">My crepa</button>
+            <button class="menu-link" data-target="club" role="tab" aria-selected="false" aria-controls="club">Club sandwiches</button>
+<button class="menu-link" data-target="toast" role="tab"aria-selected="false" aria-controls="toast">My toast</button>
+        </div>
+    </nav>
+
+    <!-- Menu Sections -->
+    <main class="menu-sections" aria-label="Menu Items">
+        <!-- Salted Crêpes Section -->
+        <section id="salted" class="menu-section active" role="tabpanel" aria-labelledby="tab-salted">
+            <div class="section-header">
+                <h2>Αλμυρές κρέπες</h2>
+            </div>
+            <div class="menu-grid">
+                <!-- Classic Complete -->
+                <div class="menu-item">
+                    <div class="item-image">
+                        <img src="https://images.unsplash.com/photo-1519676867240-f03562e64548?auto=format&fit=crop&w=800&q=80" alt="La Complète">
+                        <
+                    </div>
+                    <div class="item-content">
+                        <h3>Κρέπα Τσώνας</h3>
+                        <p>Με σνίτσελ κοτόπουλο, μπέικον, πατάτες τηγανητές, BBQ σως, τυροσαλάτα & ουγγαρέζα</p>
+                        <span class="price">8.50</span>
+                    </div>
+                </div>
+
+                <!-- Forestière -->
+                <div class="menu-item">
+                  
+                    <div class="item-content">
+                        <h3>Κρέπα ξα</h3>
+                        <p>Με κοτόπουλο, μπέικον, gouda, αυγό βραστό, πιπεριά πράσινη & μαγιονέζα</p>
+                        <span class="price">€9.00</span>
+                    </div>
+                </div>
+
+                <!-- Norvégienne -->
+                <div class="menu-item">
+                    <div class="item-image">
+                        <img src="https://images.unsplash.com/photo-1590665783102-90f875b53f80?auto=format&fit=crop&w=800&q=80" alt="La Norvégienne">
+                    </div>
+                    <div class="item-content">
+                        <h3>Κρέπα Σπαλιάρης</h3>
+                        <p>Με κοτομπουκιές, διπλό μπέικον, διπλό gouda, chips, καλαμπόκι & ουγγαρέζα</p>
+                        <span class="price">€11.50</span>
+                    </div>
+                </div>
+
+                <!-- Mediterranean -->
+                <div class="menu-item">
+                  
+                    <div class="item-content">
+                        <h3>Κρέπα Πετσούκος</h3>
+                        <p>Με κοτόπουλο, κοτομπουκιές, γαλοπούλα, cheddar, La Vache qui rit, chips, ντομάτα & διπλή μαγιονέζα</p>
+                        <span class="price">€10.50</span>
+                        <div class="item-tag vegetarian">Vegetarian</div>
+                    </div>
+                </div>
+
+                <!-- Chèvre Miel -->
+                <div class="menu-item">
+                  
+                    <div class="item-content">
+                        <h3>Κρέπα Χαίτης</h3>
+                        <p>Με κοτόπουλο, μπέικον, gouda, αυγό βραστό, μανιτάρια, πιπεριά πράσινη, ουγγαρέζα & sweet chili σως</p>
+                        <span class="price">€9.50</span>
+                        <div class="item-tag vegetarian">Vegetarian</div>
+                    </div>
+                </div>
+
+                <div class="menu-item">
+                  
+                    <div class="item-content">
+                        <h3>Κρέπα κλασσική</h3>
+                        <p>Με κοτόπουλο, gouda, μανιτάρια & ουγγαρέζα</p>
+                        <span class="price">€9.50</span>
+                        <div class="item-tag vegetarian">Vegetarian</div>
+                    </div>
+                </div>
+
+
+                <div class="menu-item">
+                    <div class="item-image">
+                        <img src="https://images.unsplash.com/photo-1590665783102-90f875b53f80?auto=format&fit=crop&w=800&q=80" alt="La Norvégienne">
+                    </div>
+                    <div class="item-content">
+                        <h3>Κρέπα γιαννιώτικη</h3>
+                        <p>Με κοτομπουκιές, gouda, πατάτες τηγανητές & ουγγαρέζα</p>
+                        <span class="price">€9.50</span>
+                        <div class="item-tag vegetarian">Vegetarian</div>
+                    </div>
+                </div>
+
+
+                <div class="menu-item">
+                  
+                    <div class="item-content">
+                        <h3>Κρέπα hot</h3>
+                        <p>Με κοτομπουκιές, σαλάμι μπύρας, gouda, τυροσαλάτα, σως cocktail & tabasco</p>
+                        <span class="price">€9.50</span>
+                        <div class="item-tag vegetarian">Vegetarian</div>
+                    </div>
+                </div>
+
+
+                <div class="menu-item">
+                  
+                    <div class="item-content">
+                        <h3>Κρέπα σεφ</h3>
+                        <p>Με σνίτσελ κοτόπουλο, μπέικον, πατάτες τηγανητές, Philadelphia & BBQ σως</p>
+                        <span class="price">€9.50</span>
+                        <div class="item-tag vegetarian">Vegetarian</div>
+                    </div>
+                </div>
+
+                <!-- Raclette -->
+                <div class="menu-item">
+                    <div class="item-image">
+                        <img src="https://images.unsplash.com/photo-1631898039984-fd5f61fe8732" alt="La Raclette">
+                    </div>
+                    <div class="item-content">
+                        <h3>Κρέπα τυριών</h3>
+                        <p>Με κασέρι καπνιστό, μανούρι, Philadelphia, cheddar & ρίγανη</p>
+                        <span class="price">€12.00</span>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Sweet Crêpes Section -->
+        <section id="sweet" class="menu-section">
+            <div class="section-header">
+                <h2>Γλυκές κρέπες</h2>
+            </div>
+            <div class="menu-grid">
+                <!-- Nutella Dream -->
+                <div class="menu-item">
+                    <div class="item-image">
+                        <img src="https://images.unsplash.com/photo-1587314168485-3236d6710814?auto=format&fit=crop&w=800&q=80" alt="Nutella Dream">
+                    </div>
+                    <div class="item-content">
+                        <h3>Κρέπα Τσώνας</h3>
+                        <p>Με πραλίνα Lacta, Oreo & μπανάνα</p>
+                        <span class="price">€5.30</span>
+                    </div>
+                </div>
+
+                <!-- Crêpe Suzette -->
+                <div class="menu-item">
+                    
+                    <div class="item-content">
+                        <h3>Κρέπα λιχούδης</h3>
+                        <p>Με Merenda & πραλίνα λευκή, Bueno, ινδοκάρυδο & αμύγδαλο</p>
+                        <span class="price">€6.00</span>
+                    </div>
+                </div>
+
+                <!-- Banana Split -->
+                <div class="menu-item">
+                    
+                    <div class="item-content">
+                        <h3>Κρέπα ουράνιο τόξο</h3>
+                        <p>Με πραλίνα λευκή & πραλίνα φράουλα, marshmallows & Smarties</p>
+                        <span class="price">€5.50</span>
+                    </div>
+                </div>
+
+                <!-- Berry Delight -->
+                <div class="menu-item">
+                   
+                    <div class="item-content">
+                        <h3>Κρέπα Nutrella</h3>
+                        <p>Με Nutella, μπισκότο, Bueno & τρούφα</p>
+                        <span class="price">€5.50</span>
+                    </div>
+                </div>
+
+                <!-- Caramel Apple -->
+                <div class="menu-item">
+                   
+                    <div class="item-content">
+                        <h3>Κρέπα fitness</h3>
+                        <p>Με σοκολάτα υγείας, φουντούκι & μπανάνα</p>
+                        <span class="price">€5.60</span>
+                    </div>
+                </div>
+
+                <div class="menu-item">
+                    <div class="item-image">
+                        <img src="https://images.unsplash.com/photo-1519676867240-f03562e64548" alt="Lemon Sugar">
+                    </div>
+                    <div class="item-content">
+                        <h3>Κρέπα banoffee</h3>
+                        <p>Με Merenda, καραμέλα, μπισκότο & μπανάνα</p>
+                        <span class="price">€4.60</span>
+                    </div>
+                </div>
+
+                <!-- Lemon Sugar -->
+                <div class="menu-item">
+                   
+                    <div class="item-content">
+                        <h3>Κρέπα sweet Christmas</h3>
+                        <p>Με πραλίνα μπισκότου ΙΟΝ, πραλίνα λευκή, μελομακάρονο, ξύσμα πορτοκαλιού & κανέλα</p>
+                        <span class="price">€4.50</span>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Build Your Own Section -->
+        <section id="build" class="menu-section">
+            <div class="section-header">
+                <h2>Φτιάξτε τη δική σας κρέπα</h2>
+                
+            </div>
+            
+            <div class="build-container">
+                <!-- Step 1: Base Selection -->
+                <div class="build-step">
+                    <h3><span>1</span> Φύλλο κρέπας</h3>
+                    <div class="base-option">
+                        <div class="option-content">
+                            <h4>Κλασική Βάση Κρέπας</h4>
+                            <span class="price">€3.50</span>
+                        </div>
+                        <button class="select-btn">Διάλεξε βάση</button>
+                    </div>
+                </div>
+
+                <!-- Step 2: Type Selection -->
+                <div class="build-step">
+                    <h3><span>2</span> Διάλεξε τύπο</h3>
+                    <div class="type-selector">
+                        <button class="type-btn active" data-type="sweet">Γλυκιά</button>
+                        <button class="type-btn" data-type="salted">Αλμυρή</button>
+                    </div>
+                </div>
+
+                <!-- Step 3: Toppings -->
+                <div class="build-step">
+                    <h3><span>3</span> Πρόσθεσε υλικά</h3>
+                    
+                    <!-- Sweet Toppings -->
+                    <div class="toppings-grid sweet-toppings">
+                        <div class="topping-item">
+                            <span>Nutella</span>
+                            <div class="topping-action">
+                                <span class="price">€1.50</span>
+                                <button class="add-btn">+</button>
+                            </div>
+                        </div>
+                        <div class="topping-item">
+                            <span>Whipped Cream</span>
+                            <div class="topping-action">
+                                <span class="price">€1.00</span>
+                                <button class="add-btn">+</button>
+                            </div>
+                        </div>
+                        <div class="topping-item">
+                            <span>Fresh Strawberries</span>
+                            <div class="topping-action">
+                                <span class="price">€1.50</span>
+                                <button class="add-btn">+</button>
+                            </div>
+                        </div>
+                        <div class="topping-item">
+                            <span>Banana Slices</span>
+                            <div class="topping-action">
+                                <span class="price">€1.00</span>
+                                <button class="add-btn">+</button>
+                            </div>
+                        </div>
+                        <div class="topping-item">
+                            <span>Chocolate Chips</span>
+                            <div class="topping-action">
+                                <span class="price">€1.00</span>
+                                <button class="add-btn">+</button>
+                            </div>
+                        </div>
+                        <div class="topping-item">
+                            <span>Caramel Sauce</span>
+                            <div class="topping-action">
+                                <span class="price">€1.00</span>
+                                <button class="add-btn">+</button>
+                            </div>
+                        </div>
+                    </div>
+                  
+                    <!-- Salted Toppings -->
+                    <div class="toppings-grid salted-toppings" style="display: none;">
+                        <div class="topping-item">
+                            <span>Cheese</span>
+                            <div class="topping-action">
+                                <span class="price">€1.50</span>
+                                <button class="add-btn">+</button>
+                            </div>
+                        </div>
+                        <div class="topping-item">
+                            <span>Ham</span>
+                            <div class="topping-action">
+                                <span class="price">€1.50</span>
+                                <button class="add-btn">+</button>
+                            </div>
+                        </div>
+                        <div class="topping-item">
+                            <span>Egg</span>
+                            <div class="topping-action">
+                                <span class="price">€1.00</span>
+                                <button class="add-btn">+</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Summary -->
+                <div class="order-summary">
+                    <h3>Η κρέπα σας</h3>
+                    <div class="selected-items"></div>
+                    <div class="total-price">
+                        <span>Σύνολο</span>
+                        <span class="price">€0.00</span>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+
+        <section id="toast" class="menu-section">
+            <div class="section-header">
+                <h2>My sandwich</h2>
+            </div>
+        
+            <div class="build-container">
+                <!-- Step 1: Base Selection -->
+                <div class="build-step">
+                    <h3><span>1</span> Διάλεξε ψωμί</h3>
+                    <div class="base-option">
+                        <div class="option-content">
+                            <h4>Ψωμί sandwich</h4>
+                            <span class="price">€3.50</span>
+                        </div>
+                        <button class="select-btn">Διάλεξε βάση</button>
+                    </div>
+                </div>
+        
+                <!-- Step 3: Toppings -->
+                <div class="build-step">
+                    <h3><span>3</span> Πρόσθεσε υλικά</h3>
+                    
+                    <!-- Toppings -->
+                    <div class="toppings-grid sweet-toppings">
+                        <div class="topping-item">
+                            <span>Cheese</span>
+                            <div class="topping-action">
+                                <span class="price">€1.50</span>
+                                <button class="add-btn">+</button>
+                            </div>
+                        </div>
+                        <!-- Additional sweet toppings here... -->
+                    </div>
+                  
+                    <div class="toppings-grid sweet-toppings"></div>
+                        <div class="topping-item">
+                            <span>Ham</span>
+                            <div class="topping-action">
+                                <span class="price">€1.50</span>
+                                <button class="add-btn">+</button>
+                            </div>
+                        </div>
+                        <!-- Additional sweet toppings here... -->
+                    </div>
+        
+                <!-- Summary -->
+                <div class="order-summary">
+                    <h3>Το τοστ σου</h3>
+                    <div class="selected-items"></div>
+                    <div class="total-price">
+                        <span>Σύνολο</span>
+                        <span class="price">€0.00</span>
+                    </div>
+                </div>
+            </div>
+        </section>
+        
+        
+
+        <!-- Club & Toast Section -->
+        <section id="club" class="menu-section">
+            <h2>Club Sandwiches</h2>
+            <div class="menu-grid">
+    
+                <div class="menu-item">
+                    <div class="item-image">
+                        <img src="https://images.unsplash.com/photo-1505253716362-afaea1d3d1af?auto=format&fit=crop&w=800&q=80" alt="Deluxe Club">
+                    </div>
+                    <div class="item-content">
+                        <h3>Club sandwich γαλοπούλα</h3>
+                        <p>Με γαλοπούλα, gouda, ντομάτα, μαρούλι & μαγιονέζα. Συνοδεύεται από πατάτες τηγανητές & σως της επιλογής σας</p>
+                        <span class="price">€5.00</span>
+                    </div>
+                </div>
+
+               
+                <div class="menu-item">
+                    <div class="item-content">
+                        <h3>Club sandwich πάριζα</h3>
+                        <p>Με πάριζα, gouda, ντομάτα, μαρούλι & μαγιονέζα. Συνοδεύεται από πατάτες τηγανητές & σως της επιλογής σας</p>
+                        <span class="price">€5.00</span>
+                       
+                    </div>
+                </div>
+                <div class="menu-item">
+                    <div class="item-content">
+                        <h3>Club sandwich μπέικον</h3>
+                        <p>Με μπέικον, gouda, ντομάτα, μαρούλι & μαγιονέζα. Συνοδεύεται από πατάτες τηγανητές & σως της επιλογής σας</p>
+                        <span class="price">€5.00</span>
+                        
+                    </div>
+                </div>
+           
+                <div class="menu-item">
+                    <div class="item-image">
+                        <img src="https://images.unsplash.com/photo-1505253716362-afaea1d3d1af?auto=format&fit=crop&w=800&q=80" alt="Deluxe Club">
+                    </div>
+                    <div class="item-content">
+                        <h3>Club sandwich σαλάμι μπύρας</h3>
+                        <p>Με σαλάμι μπύρας, gouda, ντομάτα, μαρούλι & μαγιονέζα. Συνοδεύεται από πατάτες τηγανητές & σως της επιλογής σας</p>
+                        <span class="price">€5.00</span>
+                        
+                    </div>
+                </div>
+
+
+                <div class="menu-item">
+                    <div class="item-content">
+                        <h3>Club sandwich κοτόπουλο</h3>
+                        <p>Με κοτόπουλο, gouda, ντομάτα, μαρούλι & μαγιονέζα. Συνοδεύεται από πατάτες τηγανητές & σως της επιλογής σας</p>
+                        <span class="price">€6.30</span>
+                        
+                    </div>
+                </div>
+
+
+                <div class="menu-item">
+                    <div class="item-content">
+                        <h3>Club sandwich κοτομπουκιές</h3>
+                        <p>Με κοτομπουκιές χειροποίητες, gouda, ντομάτα, μαρούλι & μαγιονέζα. Συνοδεύεται από πατάτες τηγανητές & σως της επιλογής σας</p>
+                        <span class="price">€5.80</span>
+                        
+                    </div>
+                </div>
+
+
+                <div class="menu-item">
+                    <div class="item-content">
+                        <h3>Club sandwich σνίτσελ κοτόπουλο</h3>
+                        <p>Με σνίτσελ κοτόπουλο, gouda, ντομάτα, μαρούλι & μαγιονέζα. Συνοδεύεται από πατάτες τηγανητές & σως της επιλογής σας</p>
+                        <span class="price">€6.30</span>
+                       
+                    </div>
+                </div>
+
+
+                <div class="menu-item">
+                    <div class="item-image">
+                        <img src="https://images.unsplash.com/photo-1505253716362-afaea1d3d1af?auto=format&fit=crop&w=800&q=80" alt="Deluxe Club">
+                    </div>
+                    <div class="item-content">
+                        <h3>Club sandwich μπριζόλα καπνιστή</h3>
+                        <p>Με μπριζόλα καπνιστή, gouda, ντομάτα, μαρούλι & μαγιονέζα. Συνοδεύεται από πατάτες τηγανητές & σως της επιλογής σας</p>
+                        <span class="price">€5.00</span>
+                       
+                    </div>
+                </div>
+
+                <div class="menu-item">
+                  
+                    <div class="item-content">
+                        <h3>Club sandwich νηστίσιμο</h3>
+                        <p>Με μπιφτέκι λαχανικών, ντομάτα, μαρούλι & μαγιονέζα. Συνοδεύεται από πατάτες τηγανητές & σως της επιλογής σας</p>
+                        <span class="price">€5.80</span>
+                    </div>
+                </div>
+            
+            </div>
+        </section>
+    </main>
+
+    
+    
+    <script src="./index.js" defer></script>
+
+</body>
+</html>
